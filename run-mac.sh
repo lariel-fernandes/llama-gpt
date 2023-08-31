@@ -1,6 +1,12 @@
 #!/bin/bash
 set -e
 
+# cleanup notebook checkpoints
+rm -rf .ipynb_checkpoints
+rm -rf **/.ipynb_checkpoints
+rm -rf **/**/.ipynb_checkpoints
+rm -rf **/**/**/.ipynb_checkpoints
+
 # Define a function to refresh the source of .zshrc or .bashrc
 source_shell_rc() {
     # Source .zshrc or .bashrc

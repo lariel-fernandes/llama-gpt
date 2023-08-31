@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# cleanup notebook checkpoints
+rm -rf .ipynb_checkpoints
+rm -rf **/.ipynb_checkpoints
+rm -rf **/**/.ipynb_checkpoints
+rm -rf **/**/**/.ipynb_checkpoints
+
 # Check if docker compose is installed
 if ! command -v docker &> /dev/null
 then
